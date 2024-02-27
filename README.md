@@ -67,6 +67,3 @@ This project also uses the following resources and tools:
 - PyPDF2 - A Python library to manipulate PDF files
 - Cassio - A Python library to interact with Astra DB
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
