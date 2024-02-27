@@ -1,47 +1,54 @@
-LLM-PDF QA Search Engine 🔍
-LLM-PDF QA Search Engine is a powerful tool designed to extract insights and answer questions from PDF documents using advanced language processing capabilities. Leveraging the LangChain library and OpenAI's LLM (Large Language Model), this application provides users with an interactive platform to interact with PDF content seamlessly. Users can upload their PDF files, ask questions, and receive relevant answers, making it an invaluable tool for document analysis and information retrieval tasks.
+LLM-PDF QA SEARCH ENGINE🔍
+This app is an LLM-powered PDF chatbot that can answer questions based on the content of uploaded PDF documents. It uses Streamlit for the user interface, LangChain for text processing and indexing, OpenAI for language modeling and embeddings, and Astra DB for data storage and retrieval.
 
-Features
-PDF Upload: Users can upload PDF files directly to the application.
-Natural Language Queries: Users can ask questions about the content of the uploaded PDF documents using natural language queries.
-Interactive Interface: The application provides an intuitive and user-friendly interface powered by Streamlit, allowing users to interact with the PDF content effortlessly.
-Language Model Integration: The application utilizes OpenAI's LLM model to process and understand natural language queries effectively.
-Text Extraction: PDF content is extracted using PyPDF2, enabling the application to analyze and search through the text within the documents.
-Cassandra Integration: The application integrates with Cassandra for storing and indexing text data, enabling efficient retrieval of information based on user queries.
 Installation
-To run the LLM-PDF QA Search Engine locally, follow these steps:
+To run this app, you need to have Python 3.6 or higher installed on your system. You also need to install the following packages and libraries:
 
-Clone the repository:
+streamlit
+streamlit_extras
+PyPDF2
+langchain
+langchain_openai
+langchain_vectorstores
+langchain_indexes
+langchain_llms
+langchain_embeddings
+cassio
+typing_extensions
+You can install them using pip:
 
-bash
-Copy code
-git clone https://github.com/your_username/llm-pdf-qa-search-engine.git
-Navigate to the project directory:
-
-bash
-Copy code
-cd llm-pdf-qa-search-engine
-Install the required dependencies:
-
-Copy code
 pip install -r requirements.txt
-Run the Streamlit application:
 
-arduino
-Copy code
+You also need to have an account on OpenAI and Astra DB, and obtain the API keys and tokens for accessing their services. You need to enter these credentials in the app when prompted.
+
+Usage
+To launch the app, run the following command in your terminal:
+
 streamlit run app.py
-Access the application in your web browser at http://localhost:8501.
 
-Configuration
-Before running the application, ensure you have the following configuration set up:
+This will open a web browser window where you can interact with the app. You can upload a PDF file of your choice, and then ask questions about its content. The app will use the LLM model to generate relevant answers, and also show you the most similar documents from the PDF file based on your query.
 
-ASTRA_DB_APPLICATION_TOKEN: Enter your Astra DB application token.
-ASTRA_DB_ID: Enter your Astra DB database ID.
-OPENAI_API_KEY: Enter your OpenAI API key.
-About
-This project is developed by Adesh Sabari Loganathan as a demonstration of utilizing language models and advanced language processing techniques for PDF document analysis. For any inquiries or contributions, feel free to reach out to the developer via LinkedIn.
+You can also adjust some settings in the sidebar, such as the title, the description, and the author of the app.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+Output
+Here is an example of the output of the app when uploading a PDF file about Python programming and asking some questions about it:
 
-Made with ❤️ by Adesh
+!Output
+
+Contributing
+If you want to contribute to this project, you are welcome to do so. You can report issues, request features, or submit pull requests on the GitHub repository.
+
+Please follow the code of conduct and the license of this project.
+
+Acknowledgements
+This project was inspired by the PDF Search Engine project by Abhinav Jain.
+
+This project also uses the following resources and tools:
+
+Streamlit - The fastest way to build and share data apps
+LangChain - A Python library for natural language processing and indexing
+OpenAI - A powerful language model for text generation and embeddings
+Astra DB - A scalable and secure cloud database service
+Streamlit Extras - A collection of useful components and utilities for Streamlit
+PyPDF2 - A Python library to manipulate PDF files
+Cassio - A Python library to interact with Astra DB
