@@ -34,7 +34,7 @@ You can also adjust some settings in the sidebar, such as the title, the descrip
 ## Output
 Here is an example of the output of the app when uploading a PDF file about Python programming and asking some questions about it:
 
-!Output
+
 ![image](https://github.com/adesh-commits/Chatbot/assets/89679291/2a55b6e0-7af1-4e2f-945b-8c8bb7d340ac)
 
 
@@ -51,9 +51,15 @@ This project was inspired by the PDF Search Engine project by Abhinav Jain.
 This project also uses the following resources and tools:
 
 Streamlit - The fastest way to build and share data apps
+
 LangChain - A Python library for natural language processing and indexing
+
 OpenAI - A powerful language model for text generation and embeddings
+
 Astra DB - A scalable and secure cloud database service
+
 Streamlit Extras - A collection of useful components and utilities for Streamlit
+
 PyPDF2 - A Python library to manipulate PDF files
+
 Cassio - A Python library to interact with Astra DB
