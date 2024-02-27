@@ -1,7 +1,7 @@
-LLM-PDF QA SEARCH ENGINE🔍
+# LLM-PDF QA SEARCH ENGINE🔍
 This app is an LLM-powered PDF chatbot that can answer questions based on the content of uploaded PDF documents. It uses Streamlit for the user interface, LangChain for text processing and indexing, OpenAI for language modeling and embeddings, and Astra DB for data storage and retrieval.
 
-Installation
+## Installation
 To run this app, you need to have Python 3.6 or higher installed on your system. You also need to install the following packages and libraries:
 
 streamlit
@@ -15,13 +15,14 @@ langchain_llms
 langchain_embeddings
 cassio
 typing_extensions
+
 You can install them using pip:
 
 pip install -r requirements.txt
 
 You also need to have an account on OpenAI and Astra DB, and obtain the API keys and tokens for accessing their services. You need to enter these credentials in the app when prompted.
 
-Usage
+## Usage
 To launch the app, run the following command in your terminal:
 
 streamlit run app.py
@@ -30,17 +31,21 @@ This will open a web browser window where you can interact with the app. You can
 
 You can also adjust some settings in the sidebar, such as the title, the description, and the author of the app.
 
-Output
+## Output
 Here is an example of the output of the app when uploading a PDF file about Python programming and asking some questions about it:
 
 !Output
+![image](https://github.com/adesh-commits/Chatbot/assets/89679291/2a55b6e0-7af1-4e2f-945b-8c8bb7d340ac)
 
-Contributing
+
+
+
+## Contributing
 If you want to contribute to this project, you are welcome to do so. You can report issues, request features, or submit pull requests on the GitHub repository.
 
 Please follow the code of conduct and the license of this project.
 
-Acknowledgements
+## Acknowledgements
 This project was inspired by the PDF Search Engine project by Abhinav Jain.
 
 This project also uses the following resources and tools:
